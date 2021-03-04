@@ -1,4 +1,4 @@
-package interfete;
+package ro.ase.csie.cts.seminar2.interfete;
 
 public interface Profitabil {
     //clasa abstracta care contine doar metodate abstracte si ontine atribute statice abstracte

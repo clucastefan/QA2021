@@ -16,6 +16,11 @@
 
 -> metoda calculeaza prea multe valori intermediare
 -> se repeta o parte din prelucrari
+
+3. SOLID
+
+-> eliminare switch/case prin tratarea primului caz in mod generic
+-> eliminare dependente legate de validarea datelor & prelucrarea discountu-ului
 ->
 ->
 

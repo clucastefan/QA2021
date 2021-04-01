@@ -1,4 +1,4 @@
-package ro.ase.csie.cts.seminar6;
+package ro.ase.csie.cts.seminar6.builder;
 
 public class TestBuilder {
     public static void main(String[] args) {

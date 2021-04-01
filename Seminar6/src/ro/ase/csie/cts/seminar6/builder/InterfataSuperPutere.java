@@ -1,4 +1,4 @@
-package ro.ase.csie.cts.seminar6;
+package ro.ase.csie.cts.seminar6.builder;
 
 public interface InterfataSuperPutere {
 }

@@ -1,4 +1,4 @@
-package ro.ase.csie.cts.seminar6.FactoryMethod;
+package ro.ase.csie.cts.seminar7.FactoryMethod;
 
 public class TestFactory {
     public static void main(String[] args) {

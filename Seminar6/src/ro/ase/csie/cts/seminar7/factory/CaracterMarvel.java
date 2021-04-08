@@ -1,6 +1,4 @@
-package ro.ase.csie.cts.seminar6.factory;
-
-import java.nio.charset.CharacterCodingException;
+package ro.ase.csie.cts.seminar7.factory;
 
 public class CaracterMarvel extends CaracterAbstract {
 

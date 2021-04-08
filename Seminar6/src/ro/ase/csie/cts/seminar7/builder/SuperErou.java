@@ -1,4 +1,4 @@
-package ro.ase.csie.cts.seminar6.builder;
+package ro.ase.csie.cts.seminar7.builder;
 
 public class SuperErou {
 

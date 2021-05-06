@@ -1,4 +1,6 @@
-package ro.ase.csie.cts.seminar10;
+package ro.ase.csie.cts.seminar10.strategy;
+
+import ro.ase.csie.cts.seminar10.strategy.InterfataStrategieMarketing;
 
 public class Jucator {
     int totalOreJucate;

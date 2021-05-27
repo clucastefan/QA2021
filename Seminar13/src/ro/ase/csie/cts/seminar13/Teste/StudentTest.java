@@ -5,10 +5,12 @@ import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 import static org.junit.Assert.*;
 
+import ro.ase.csie.cts.seminar13.Exceptii.ExceptieNote;
 import ro.ase.csie.cts.seminar13.Exceptii.ExceptieNume;
 import ro.ase.csie.cts.seminar13.Exceptii.ExceptieVarsta;
 import ro.ase.csie.cts.seminar13.Modele.Student;
@@ -86,4 +88,46 @@ public class StudentTest {
         String numeNou = "Io";
         student.setNume(numeNou);
     }
+
+    @Test
+    public void testGetNotaMinimaOrderingSetSortatCrescator() throws ExceptieNote {
+        int notaMinima = 4;
+        ArrayList<Integer> note = new ArrayList<>();
+        for (int i =0;i<5;i++){
+            note.add(i+notaMinima);
+        }
+        student.setNote(note);
+        int notaMinimaCalculata = student.getNotaMinima();
+        assertEquals("Test valori sortate crescator",notaMinima,notaMinimaCalculata);
+
+    }
+
+    @Test
+    public void testGetNotaMinimaCardinalityZero() throws ExceptieNote {
+        ArrayList<Integer> note = new ArrayList<>();
+        student.setNote(note);
+        int notaMinima = 0;
+        int notaMinimaCalculata = student.getNotaMinima()  ;
+        assertEquals("Test fara note",notaMinima,notaMinimaCalculata);
+    }
+    @Test
+    public void testGetNotaMinimaCardinalityUnu() throws ExceptieNote {
+        ArrayList<Integer> note = new ArrayList<>();
+        note.add(Student.MAX_NOTA);
+
+        student.setNote(note);
+
+        int notaMinima = student.MAX_NOTA;
+        int notaMinimaCalculata = student.getNotaMinima()  ;
+        assertEquals("Test cu o singura note",notaMinima,notaMinimaCalculata);
+    }
+
+    @Test
+    public void testGetNotaMinimaReferintaExistenceNoteNull() throws ExceptieNote {
+        student.setNote(null);
+        int notaMinima = 0;
+        int notaMinimaCalculata = student.getNotaMinima();
+        assertEquals("Test referinta null pentru note",notaMinima,notaMinimaCalculata);
+    }
+
 }

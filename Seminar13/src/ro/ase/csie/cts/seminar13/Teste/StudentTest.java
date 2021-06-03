@@ -130,4 +130,9 @@ public class StudentTest {
         assertEquals("Test referinta null pentru note",notaMinima,notaMinimaCalculata);
     }
 
+    // Seminar 14
+
+
+
+
 }
